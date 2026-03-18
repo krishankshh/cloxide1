@@ -135,7 +135,7 @@ export function HomePage() {
                 </div>
                 <div>
                   <div className="font-black text-3xl text-slate-950 tracking-[0.1em] leading-none mb-1">99.9%</div>
-                   <div className="mono-tag !text-slate-950">Purity_Index</div>
+                  <div className="mono-tag !text-slate-950">Purity_Index</div>
                 </div>
               </div>
               <div className="w-full h-1 bg-slate-100 rounded-full overflow-hidden mb-4">
