@@ -59,13 +59,13 @@ export function Footer() {
                   <div className="w-9 h-9 rounded-lg bg-slate-50 flex items-center justify-center text-cyan-600 group-hover:bg-cyan-50 transition-colors shadow-sm">
                     <Mail className="w-4 h-4" />
                   </div>
-                  <span className="hover:text-cyan-600 transition-colors pt-2 uppercase tracking-wide">info@medicalbiotech.com</span>
+                  <span className="hover:text-cyan-600 transition-colors pt-2 uppercase tracking-wide">Contact@cloxide.com</span>
                 </div>
                 <div className="flex items-start gap-5 text-[13px] text-slate-500 font-medium group">
                   <div className="w-9 h-9 rounded-lg bg-slate-50 flex items-center justify-center text-cyan-600 shadow-sm">
                     <MapPin className="w-4 h-4" />
                   </div>
-                  <span className="pt-2 uppercase tracking-wide">Scientific District<br />Healthcare Corridor</span>
+                  <span className="pt-2 uppercase tracking-wide">Somewhere in<br />Dubai</span>
                 </div>
               </div>
             </div>

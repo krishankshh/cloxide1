@@ -13,6 +13,7 @@ import { Button } from "../components/ui/button";
 import { cn } from "../components/ui/utils";
 import heroImg from "../../assets/images/hero.png";
 import heroBg from "../../assets/images/hero_bg.png";
+import molecularPurityImg from "../../assets/images/molecular_precision.png";
 
 export function HomePage() {
   const bentoItems = [
@@ -22,7 +23,7 @@ export function HomePage() {
       icon: Activity,
       size: "lg",
       color: "bg-cyan-50 text-cyan-600",
-      image: "https://images.unsplash.com/photo-1582719471384-894fbb16e074?auto=format&fit=crop&q=80&w=800"
+      image: molecularPurityImg
     },
     {
       title: "Rapid Sterilization",
@@ -164,7 +165,7 @@ export function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[220px]">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[260px]">
             {bentoItems.map((item, i) => (
               <motion.div
                 key={i}
@@ -176,7 +177,7 @@ export function HomePage() {
                   "relative rounded-2xl p-8 overflow-hidden group border border-slate-100 bg-white transition-all duration-700",
                   "hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.08)] hover:-translate-y-1 hover:border-cyan-200",
                   item.size === "lg" && "md:col-span-2 md:row-span-2",
-                  item.size === "md" && "md:col-span-1 md:row-span-2",
+                  item.size === "md" && "md:col-span-1 md:row-span-1",
                   item.size === "sm" && "md:col-span-1 md:row-span-1"
                 )}
               >
@@ -186,20 +187,25 @@ export function HomePage() {
 
                 {/* Visual Background for LG tiles */}
                 {item.image && (
-                  <div className="absolute inset-0 z-0 opacity-[0.03] group-hover:opacity-[0.08] transition-opacity duration-1000 scale-110 group-hover:scale-100 transform-gpu">
-                    <img src={item.image} className="w-full h-full object-cover" alt="" />
-                  </div>
+                  <>
+                    <div className="absolute inset-0 z-0 opacity-[0.35] group-hover:opacity-[0.5] transition-opacity duration-1000 scale-110 group-hover:scale-100 transform-gpu">
+                      <img src={item.image} className="w-full h-full object-cover" alt="" />
+                    </div>
+                    {/* Readability gradient overlay */}
+                    <div className="absolute inset-0 z-[1] bg-gradient-to-r from-white/80 via-white/40 to-transparent pointer-events-none" />
+                  </>
                 )}
 
                 <div className="relative z-10 h-full flex flex-col">
                   <div className={cn(
-                    "w-16 h-16 rounded-2xl flex items-center justify-center mb-8 shadow-sm transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3",
+                    item.size === "lg" ? "w-16 h-16 mb-8" : "w-12 h-12 mb-4",
+                    "rounded-2xl flex items-center justify-center shadow-sm transition-transform duration-500 group-hover:scale-110 group-hover:rotate-3",
                     item.color
                   )}>
-                    <item.icon className="w-8 h-8" />
+                    <item.icon className={cn(item.size === "lg" ? "w-8 h-8" : "w-6 h-6")} />
                   </div>
                   <h3 className={cn(
-                    "font-black text-slate-900 mb-6 tracking-[0.1em] uppercase",
+                    "font-black text-slate-900 mb-4 tracking-[0.1em] uppercase",
                     item.size === "lg" ? "text-4xl" : "text-xl"
                   )}>
                     {item.title}
