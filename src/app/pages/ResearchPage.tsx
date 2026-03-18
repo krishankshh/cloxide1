@@ -41,7 +41,7 @@ export function ResearchPage() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
-            className="inline-flex items-center gap-4 px-6 py-2 bg-slate-950 text-white rounded-[0.5rem] mb-12 shadow-2xl border border-slate-800 tracking-[0.25em] relative group overflow-hidden"
+            className="inline-flex items-center gap-4 px-6 py-2 bg-slate-950 text-white rounded-[0.5rem] mb-12 shadow-2xl border border-slate-800 tracking-[0.1em] relative group overflow-hidden"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
             <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
@@ -52,7 +52,7 @@ export function ResearchPage() {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-            className="text-6xl lg:text-7xl font-black text-slate-950 mb-8 leading-[0.8] tracking-[0.25em] font-heading uppercase"
+            className="text-6xl lg:text-7xl font-black text-slate-950 mb-8 leading-[0.8] tracking-[0.1em] font-heading uppercase"
           >
             EMPIRICAL <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-teal-500 italic font-medium tracking-tight pr-10">INTEGRITY.</span>
@@ -83,8 +83,8 @@ export function ResearchPage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col lg:flex-row items-end justify-between mb-16 gap-12">
             <div className="max-w-2xl text-left">
-              <div className="text-[10px] font-black text-cyan-600 uppercase tracking-[0.25em] mb-8">Peer-Reviewed Insights</div>
-              <h2 className="text-5xl lg:text-6xl font-black text-slate-950 leading-[0.8] tracking-[0.25em] uppercase mb-6">
+              <div className="text-[10px] font-black text-cyan-600 uppercase tracking-[0.1em] mb-8">Peer-Reviewed Insights</div>
+              <h2 className="text-5xl lg:text-6xl font-black text-slate-950 leading-[0.8] tracking-[0.1em] uppercase mb-6">
                 CLINICAL <br />DYNAMICS
               </h2>
             </div>
@@ -93,7 +93,7 @@ export function ResearchPage() {
               <input 
                 type="text" 
                 placeholder="TECHNICAL SEARCH..." 
-                className="w-full h-14 pl-12 pr-6 rounded-xl bg-slate-50 border border-slate-100 focus:outline-none focus:border-cyan-400 transition-all font-black text-[11px] uppercase tracking-[0.25em] placeholder:text-slate-300 shadow-sm" 
+                className="w-full h-14 pl-12 pr-6 rounded-xl bg-slate-50 border border-slate-100 focus:outline-none focus:border-cyan-400 transition-all font-black text-[11px] uppercase tracking-[0.1em] placeholder:text-slate-300 shadow-sm" 
               />
             </div>
           </div>
@@ -114,17 +114,17 @@ export function ResearchPage() {
                     <img src={article.image + "?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800"} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 grayscale-[0.2] group-hover:grayscale-0" alt={article.title} />
                     <div className="scan-line" />
                   </div>
-                  <div className="absolute top-6 left-6 medical-glass px-4 py-1 rounded-full text-[9px] font-black text-cyan-600 uppercase tracking-[0.25em] shadow-xl border border-white/40">Article: {article.category}</div>
+                  <div className="absolute top-6 left-6 medical-glass px-4 py-1 rounded-full text-[9px] font-black text-cyan-600 uppercase tracking-[0.1em] shadow-xl border border-white/40">Article: {article.category}</div>
                 </div>
                 
                 <div className="px-4">
-                  <div className="flex items-center gap-6 text-[10px] font-black text-slate-400 uppercase tracking-[0.3em] mb-6">
+                  <div className="flex items-center gap-6 text-[10px] font-black text-slate-400 uppercase tracking-[0.1em] mb-6">
                     <span className="flex items-center gap-2"><Clock className="w-4 h-4" /> {article.time}</span>
                     <span className="flex items-center gap-2"><ShieldCheck className="w-4 h-4 text-cyan-500" /> VERIFIED</span>
                   </div>
                   <h3 className="text-3xl font-black text-slate-950 group-hover:text-cyan-600 transition-colors mb-6 uppercase leading-tight tracking-tight">{article.title}</h3>
                   <p className="text-slate-500 font-medium leading-relaxed mb-8 text-[15px]">{article.desc}</p>
-                  <div className="flex items-center gap-4 text-cyan-600 font-black uppercase text-[11px] tracking-[0.3em] group-hover:gap-6 transition-all duration-500">
+                  <div className="flex items-center gap-4 text-cyan-600 font-black uppercase text-[11px] tracking-[0.1em] group-hover:gap-6 transition-all duration-500">
                     READ PUBLICATION <ArrowRight className="w-5 h-5" />
                   </div>
                 </div>
@@ -138,8 +138,8 @@ export function ResearchPage() {
       <section className="py-16 lg:py-24 bg-slate-50/50">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <div className="text-[10px] font-black text-cyan-600 uppercase tracking-[0.25em] mb-8">Verification Dossiers</div>
-            <h2 className="text-4xl lg:text-5xl font-black text-slate-950 mb-8 leading-tight tracking-[0.25em] uppercase font-heading">TECHNICAL LIBRARY</h2>
+            <div className="text-[10px] font-black text-cyan-600 uppercase tracking-[0.1em] mb-8">Verification Dossiers</div>
+            <h2 className="text-4xl lg:text-5xl font-black text-slate-950 mb-8 leading-tight tracking-[0.1em] uppercase font-heading">TECHNICAL LIBRARY</h2>
             <p className="text-lg text-slate-500 font-medium max-w-2xl mx-auto leading-relaxed">Comprehensive scientific documentation engineered for medical directors and technical engineers.</p>
           </div>
 
@@ -164,7 +164,7 @@ export function ResearchPage() {
                   </div>
                   <div>
                     <h4 className="text-xl font-black text-slate-950 mb-2 uppercase tracking-tight">{title}</h4>
-                    <div className="text-[9px] font-black text-slate-400 uppercase tracking-[0.25em] flex items-center gap-4">
+                    <div className="text-[9px] font-black text-slate-400 uppercase tracking-[0.1em] flex items-center gap-4">
                       <span className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-cyan-500" /> PDF • 2.4 MB</span>
                       <span>PUBLISHED v2026</span>
                     </div>
@@ -187,8 +187,8 @@ export function ResearchPage() {
                <Award className="w-10 h-10" />
             </div>
             <div>
-              <div className="text-[11px] font-black text-cyan-600 uppercase tracking-[0.25em] mb-4">Intellectual Property</div>
-              <h2 className="text-5xl lg:text-7xl font-black text-slate-950 leading-tight tracking-[0.25em] uppercase font-heading">SCHOLARLY <br />CITATIONS</h2>
+              <div className="text-[11px] font-black text-cyan-600 uppercase tracking-[0.1em] mb-4">Intellectual Property</div>
+              <h2 className="text-5xl lg:text-7xl font-black text-slate-950 leading-tight tracking-[0.1em] uppercase font-heading">SCHOLARLY <br />CITATIONS</h2>
             </div>
           </div>
 
@@ -196,9 +196,9 @@ export function ResearchPage() {
             <table className="w-full border-collapse">
               <thead>
                 <tr className="bg-slate-50 border-b border-slate-100">
-                  <th className="p-16 text-left text-[11px] font-black text-slate-400 uppercase tracking-[0.25em]">Publication Index</th>
-                  <th className="p-16 text-left text-[11px] font-black text-slate-400 uppercase tracking-[0.25em]">Nexus Source</th>
-                  <th className="p-16 text-right text-[11px] font-black text-slate-400 uppercase tracking-[0.25em]">Index Year</th>
+                  <th className="p-16 text-left text-[11px] font-black text-slate-400 uppercase tracking-[0.1em]">Publication Index</th>
+                  <th className="p-16 text-left text-[11px] font-black text-slate-400 uppercase tracking-[0.1em]">Nexus Source</th>
+                  <th className="p-16 text-right text-[11px] font-black text-slate-400 uppercase tracking-[0.1em]">Index Year</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100">
@@ -209,9 +209,9 @@ export function ResearchPage() {
                   { title: "Interrupting MDR-Bacteria Chain of Transmission", journal: "Epidemiology Core", year: "2023" }
                 ].map((row, i) => (
                   <tr key={i} className="group hover:bg-slate-50 transition-all duration-300">
-                    <td className="p-16 font-black text-slate-950 text-2xl uppercase tracking-[0.25em] leading-tight max-w-2xl">{row.title}</td>
-                    <td className="p-16 text-slate-400 font-bold uppercase text-[12px] tracking-[0.25em]">{row.journal}</td>
-                    <td className="p-16 text-right text-cyan-600 font-black text-2xl tracking-[0.25em]">{row.year}</td>
+                    <td className="p-16 font-black text-slate-950 text-2xl uppercase tracking-[0.1em] leading-tight max-w-2xl">{row.title}</td>
+                    <td className="p-16 text-slate-400 font-bold uppercase text-[12px] tracking-[0.1em]">{row.journal}</td>
+                    <td className="p-16 text-right text-cyan-600 font-black text-2xl tracking-[0.1em]">{row.year}</td>
                   </tr>
                 ))}
               </tbody>
@@ -232,10 +232,10 @@ export function ResearchPage() {
             transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
             className="max-w-4xl mx-auto"
           >
-            <div className="inline-flex items-center gap-4 px-8 py-3 bg-white/10 backdrop-blur-2xl text-cyan-400 rounded-full text-[10px] font-black mb-16 border border-white/20 uppercase tracking-[0.25em]">
+            <div className="inline-flex items-center gap-4 px-8 py-3 bg-white/10 backdrop-blur-2xl text-cyan-400 rounded-full text-[10px] font-black mb-16 border border-white/20 uppercase tracking-[0.1em]">
                Nexus Network Collective
             </div>
-            <h2 className="text-5xl lg:text-8xl font-black mb-12 leading-[0.9] tracking-[0.25em] uppercase font-heading">STAY <br />VALIDATED.</h2>
+            <h2 className="text-5xl lg:text-8xl font-black mb-12 leading-[0.9] tracking-[0.1em] uppercase font-heading">STAY <br />VALIDATED.</h2>
             <p className="text-2xl text-slate-400 font-medium mb-20 leading-relaxed max-w-2xl mx-auto">
               Join 5,000+ hygiene architects receiving technical updates and peer-reviewed dossier summaries. 
             </p>
@@ -243,9 +243,9 @@ export function ResearchPage() {
               <input 
                 type="email" 
                 placeholder="MEDICAL EMAIL ADDRESS" 
-                className="h-16 px-8 rounded-2xl bg-white text-slate-950 placeholder:text-slate-300 flex-1 focus:outline-none focus:ring-4 focus:ring-cyan-500/20 transition-all font-black text-[11px] uppercase tracking-[0.25em] border-none" 
+                className="h-16 px-8 rounded-2xl bg-white text-slate-950 placeholder:text-slate-300 flex-1 focus:outline-none focus:ring-4 focus:ring-cyan-500/20 transition-all font-black text-[11px] uppercase tracking-[0.1em] border-none" 
               />
-              <Button className="h-16 px-10 rounded-2xl bg-cyan-600 text-white hover:bg-white hover:text-slate-950 text-[11px] font-black uppercase tracking-[0.25em] shadow-xl transition-all hover:scale-105 active:scale-95 border-none">
+              <Button className="h-16 px-10 rounded-2xl bg-cyan-600 text-white hover:bg-white hover:text-slate-950 text-[11px] font-black uppercase tracking-[0.1em] shadow-xl transition-all hover:scale-105 active:scale-95 border-none">
                 Join Collective
               </Button>
             </div>

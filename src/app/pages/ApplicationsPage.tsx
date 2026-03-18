@@ -90,7 +90,7 @@ export function ApplicationsPage() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
-            className="inline-flex items-center gap-4 px-6 py-2 bg-slate-950 text-white rounded-[0.5rem] mb-12 shadow-2xl border border-slate-800 tracking-[0.25em] relative group overflow-hidden"
+            className="inline-flex items-center gap-4 px-6 py-2 bg-slate-950 text-white rounded-[0.5rem] mb-12 shadow-2xl border border-slate-800 tracking-[0.1em] relative group overflow-hidden"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
             <span className="w-1.5 h-1.5 rounded-full bg-teal-400 animate-pulse" />
@@ -101,7 +101,7 @@ export function ApplicationsPage() {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-            className="text-6xl lg:text-7xl font-black text-slate-950 mb-8 leading-[0.8] tracking-[0.25em] uppercase font-heading"
+            className="text-6xl lg:text-7xl font-black text-slate-950 mb-8 leading-[0.8] tracking-[0.1em] uppercase font-heading"
           >
             UNIVERSAL <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-cyan-500 italic font-medium tracking-tight pr-10">ERADICATION.</span>
@@ -132,8 +132,8 @@ export function ApplicationsPage() {
       <section className="py-16 lg:py-24 bg-white relative">
         <div className="max-w-7xl mx-auto px-6">
           <div className="mb-16 max-w-2xl text-left">
-              <div className="text-[10px] font-black text-teal-600 uppercase tracking-[0.25em] mb-8">Application Portfolio</div>
-              <h2 className="text-5xl lg:text-6xl font-black text-slate-950 leading-[0.9] tracking-[0.25em] uppercase mb-6">
+              <div className="text-[10px] font-black text-teal-600 uppercase tracking-[0.1em] mb-8">Application Portfolio</div>
+              <h2 className="text-5xl lg:text-6xl font-black text-slate-950 leading-[0.9] tracking-[0.1em] uppercase mb-6">
                 STRATEGIC <br />SECTORS
               </h2>
               <p className="text-lg text-slate-500 font-medium leading-relaxed">Cross-sector deployment protocols engineered for absolute biological termination.</p>
@@ -159,7 +159,7 @@ export function ApplicationsPage() {
                     />
                     <div className="scan-line" />
                   </div>
-                  <div className="absolute top-6 left-6 medical-glass px-4 py-1 rounded-full text-[9px] font-black text-cyan-600 uppercase tracking-[0.25em] shadow-xl border border-white/40">Sector: {app.category}</div>
+                  <div className="absolute top-6 left-6 medical-glass px-4 py-1 rounded-full text-[9px] font-black text-cyan-600 uppercase tracking-[0.1em] shadow-xl border border-white/40">Sector: {app.category}</div>
                   <div className={cn("absolute bottom-6 right-6 w-14 h-14 rounded-2xl flex items-center justify-center text-white bg-gradient-to-br shadow-xl group-hover:rotate-6 transition-transform", app.color)}>
                     <app.icon className="w-7 h-7" />
                   </div>
@@ -170,7 +170,7 @@ export function ApplicationsPage() {
                   <h3 className="text-2xl font-black text-slate-950 mb-4 font-heading uppercase leading-tight tracking-tight">{app.title}</h3>
                   <p className="text-slate-500 mb-8 leading-relaxed flex-1 font-medium text-[14px]">{app.desc}</p>
                   
-                  <Button variant="outline" className="w-full h-14 rounded-xl border-2 border-slate-100 text-slate-950 hover:bg-slate-950 hover:text-white transition-all font-black text-[10px] uppercase tracking-[0.25em] flex items-center justify-between px-8">
+                  <Button variant="outline" className="w-full h-14 rounded-xl border-2 border-slate-100 text-slate-950 hover:bg-slate-950 hover:text-white transition-all font-black text-[10px] uppercase tracking-[0.1em] flex items-center justify-between px-8">
                     Protocol Analysis <ArrowRight className="w-5 h-5" />
                   </Button>
                 </div>
@@ -194,8 +194,8 @@ export function ApplicationsPage() {
               viewport={{ once: true }}
               transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
             >
-              <div className="text-[11px] font-black text-teal-600 uppercase tracking-[0.25em] mb-10">Operational Intelligence</div>
-              <h2 className="text-6xl lg:text-7xl font-black text-slate-950 mb-10 leading-[0.9] tracking-[0.25em] uppercase font-heading">CONSULTATIVE <br />IMPLEMENTATION</h2>
+              <div className="text-[11px] font-black text-teal-600 uppercase tracking-[0.1em] mb-10">Operational Intelligence</div>
+              <h2 className="text-6xl lg:text-7xl font-black text-slate-950 mb-10 leading-[0.9] tracking-[0.1em] uppercase font-heading">CONSULTATIVE <br />IMPLEMENTATION</h2>
               <p className="text-2xl text-slate-500 mb-16 leading-relaxed font-medium">
                 We deliver more than chemical agents; we engineer comprehensive clinical safety architectures tailored to institutional dynamics and high-consequence biothreats.
               </p>
@@ -211,7 +211,7 @@ export function ApplicationsPage() {
                     <div className="w-12 h-12 rounded-[1rem] bg-slate-50 flex items-center justify-center text-teal-600 group-hover:bg-teal-600 group-hover:text-white transition-all duration-500">
                       <CheckCircle className="w-7 h-7" />
                     </div>
-                    <span className="font-black text-slate-950 text-[10px] lg:text-[12px] uppercase tracking-[0.25em] leading-tight">{item}</span>
+                    <span className="font-black text-slate-950 text-[10px] lg:text-[12px] uppercase tracking-[0.1em] leading-tight">{item}</span>
                   </div>
                 ))}
               </div>
@@ -224,12 +224,12 @@ export function ApplicationsPage() {
               transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
               className="relative p-8 lg:p-16 bg-white rounded-[3rem] shadow-[0_50px_100px_-25px_rgba(0,0,0,0.1)] border-8 border-white ring-1 ring-slate-100"
             >
-              <div className="text-teal-600 font-black mb-10 uppercase tracking-[0.25em] text-[10px]">Technical Request</div>
-              <h3 className="text-4xl lg:text-5xl font-black text-slate-950 mb-10 uppercase leading-none tracking-[0.25em]">PROFESSIONAL <br />SITE AUDIT</h3>
+              <div className="text-teal-600 font-black mb-10 uppercase tracking-[0.1em] text-[10px]">Technical Request</div>
+              <h3 className="text-4xl lg:text-5xl font-black text-slate-950 mb-10 uppercase leading-none tracking-[0.1em]">PROFESSIONAL <br />SITE AUDIT</h3>
               <p className="text-slate-500 mb-16 leading-relaxed text-lg lg:text-xl font-medium">
                 Collaborate with our chemical engineering collective to identify high-consequence zones and engineer an optimized molecular defense strategy.
               </p>
-              <Button className="h-16 px-10 rounded-2xl bg-slate-950 text-white hover:bg-teal-600 text-[11px] font-black uppercase tracking-[0.25em] w-full shadow-xl transition-all hover:scale-105 active:scale-95 border-none">
+              <Button className="h-16 px-10 rounded-2xl bg-slate-950 text-white hover:bg-teal-600 text-[11px] font-black uppercase tracking-[0.1em] w-full shadow-xl transition-all hover:scale-105 active:scale-95 border-none">
                 Schedule Engineering Survey
               </Button>
             </motion.div>

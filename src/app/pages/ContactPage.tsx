@@ -43,7 +43,7 @@ export function ContactPage() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
-            className="inline-flex items-center gap-4 px-6 py-2 bg-slate-950 text-white rounded-[0.5rem] mb-12 shadow-2xl border border-slate-800 tracking-[0.25em] relative group overflow-hidden"
+            className="inline-flex items-center gap-4 px-6 py-2 bg-slate-950 text-white rounded-[0.5rem] mb-12 shadow-2xl border border-slate-800 tracking-[0.1em] relative group overflow-hidden"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
             <span className="w-1.5 h-1.5 rounded-full bg-sky-400 animate-pulse" />
@@ -54,7 +54,7 @@ export function ContactPage() {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-            className="text-6xl lg:text-7xl font-black text-slate-950 mb-8 leading-[0.8] tracking-[0.25em] uppercase font-heading"
+            className="text-6xl lg:text-7xl font-black text-slate-950 mb-8 leading-[0.8] tracking-[0.1em] uppercase font-heading"
           >
             CLINICAL <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-teal-500 italic font-medium tracking-tight pr-10">INTAKE.</span>
@@ -88,8 +88,8 @@ export function ContactPage() {
             {/* TECHNICAL CHANNELS INFO */}
             <div className="lg:col-span-5">
               <div className="sticky top-32">
-                <div className="text-[11px] font-black text-sky-600 uppercase tracking-[0.25em] mb-10">Verification Channels</div>
-                <h2 className="text-6xl lg:text-7xl font-black text-slate-950 leading-[0.9] tracking-[0.25em] uppercase mb-16">
+                <div className="text-[11px] font-black text-sky-600 uppercase tracking-[0.1em] mb-10">Verification Channels</div>
+                <h2 className="text-6xl lg:text-7xl font-black text-slate-950 leading-[0.9] tracking-[0.1em] uppercase mb-16">
                   DIRECT <br />PROTOCOLS
                 </h2>
                 
@@ -106,9 +106,9 @@ export function ContactPage() {
                     <item.icon className="w-6 h-6 relative z-10" />
                   </div>
                   <div className="relative z-10">
-                    <div className="text-[9px] font-black tracking-[0.25em] text-slate-400 mb-1 uppercase">{item.title}</div>
+                    <div className="text-[9px] font-black tracking-[0.1em] text-slate-400 mb-1 uppercase">{item.title}</div>
                     <div className="text-xl font-black text-slate-950 mb-1 uppercase tracking-tight leading-none">{item.info}</div>
-                    <div className="text-[9px] font-black tracking-[0.25em] text-slate-400 opacity-60 uppercase">{item.sub}</div>
+                    <div className="text-[9px] font-black tracking-[0.1em] text-slate-400 opacity-60 uppercase">{item.sub}</div>
                   </div>
                 </div>
                   ))}
@@ -124,7 +124,7 @@ export function ContactPage() {
                   <ShieldCheck className="w-12 h-12 mb-8 text-sky-400 relative z-10" />
                   <h3 className="text-2xl font-black mb-4 uppercase tracking-tight relative z-10">ENTERPRISE COMPLIANCE</h3>
                   <p className="text-slate-400 font-medium mb-10 leading-relaxed text-base relative z-10">Full documentation for hospital procurement systems and GPO compliance verification.</p>
-                  <Button className="w-full h-14 rounded-xl bg-white text-slate-950 font-black uppercase text-[10px] tracking-[0.25em] hover:bg-sky-400 hover:text-white shadow-xl transition-all relative z-10 border-none">
+                  <Button className="w-full h-14 rounded-xl bg-white text-slate-950 font-black uppercase text-[10px] tracking-[0.1em] hover:bg-sky-400 hover:text-white shadow-xl transition-all relative z-10 border-none">
                     Request Credentials Dossier
                   </Button>
                 </motion.div>
@@ -141,28 +141,28 @@ export function ContactPage() {
                 className="bg-white rounded-[3rem] p-10 lg:p-16 border-8 border-slate-50 ring-1 ring-slate-100 shadow-[0_50px_100px_-25px_rgba(0,0,0,0.1)]"
               >
                 <div className="mb-20">
-                  <div className="text-[11px] font-black text-sky-600 uppercase tracking-[0.25em] mb-8">Technical Intake Protocol</div>
+                  <div className="text-[11px] font-black text-sky-600 uppercase tracking-[0.1em] mb-8">Technical Intake Protocol</div>
                   <h2 className="text-5xl lg:text-6xl font-black text-slate-950 mb-8 uppercase leading-tight tracking-tight">INQUIRY <br />PORTAL</h2>
                   <p className="text-xl text-slate-500 font-medium leading-relaxed">Please provide verifiable facility details for precise technical routing and protocol assignment.</p>
                 </div>
 
                 <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-12">
                   <div className="space-y-4">
-                    <label className="text-[9px] font-black text-slate-400 uppercase tracking-[0.25em] ml-2">Verified Full Name</label>
-                    <input name="name" onChange={handleChange} className="w-full h-14 px-6 rounded-xl bg-slate-50 border border-slate-100 focus:border-sky-400 focus:bg-white transition-all outline-none font-black text-[12px] uppercase tracking-[0.25em] placeholder:text-slate-100" placeholder="LEAD MEDICAL CORRESPONDENT" />
+                    <label className="text-[9px] font-black text-slate-400 uppercase tracking-[0.1em] ml-2">Verified Full Name</label>
+                    <input name="name" onChange={handleChange} className="w-full h-14 px-6 rounded-xl bg-slate-50 border border-slate-100 focus:border-sky-400 focus:bg-white transition-all outline-none font-black text-[12px] uppercase tracking-[0.1em] placeholder:text-slate-100" placeholder="LEAD MEDICAL CORRESPONDENT" />
                   </div>
                   <div className="space-y-4">
-                    <label className="text-[9px] font-black text-slate-400 uppercase tracking-[0.25em] ml-2">Medical Institution</label>
-                    <input name="organization" onChange={handleChange} className="w-full h-14 px-6 rounded-xl bg-slate-50 border border-slate-100 focus:border-sky-400 focus:bg-white transition-all outline-none font-black text-[12px] uppercase tracking-[0.25em] placeholder:text-slate-100" placeholder="FACILITY DESIGNATION" />
+                    <label className="text-[9px] font-black text-slate-400 uppercase tracking-[0.1em] ml-2">Medical Institution</label>
+                    <input name="organization" onChange={handleChange} className="w-full h-14 px-6 rounded-xl bg-slate-50 border border-slate-100 focus:border-sky-400 focus:bg-white transition-all outline-none font-black text-[12px] uppercase tracking-[0.1em] placeholder:text-slate-100" placeholder="FACILITY DESIGNATION" />
                   </div>
                   <div className="space-y-4">
-                    <label className="text-[9px] font-black text-slate-400 uppercase tracking-[0.25em] ml-2">Clinical Email Address</label>
-                    <input name="email" onChange={handleChange} className="w-full h-14 px-6 rounded-xl bg-slate-50 border border-slate-100 focus:border-sky-400 focus:bg-white transition-all outline-none font-black text-[12px] uppercase tracking-[0.25em] placeholder:text-slate-100" placeholder="VALID DOMAIN REQUIRED" />
+                    <label className="text-[9px] font-black text-slate-400 uppercase tracking-[0.1em] ml-2">Clinical Email Address</label>
+                    <input name="email" onChange={handleChange} className="w-full h-14 px-6 rounded-xl bg-slate-50 border border-slate-100 focus:border-sky-400 focus:bg-white transition-all outline-none font-black text-[12px] uppercase tracking-[0.1em] placeholder:text-slate-100" placeholder="VALID DOMAIN REQUIRED" />
                   </div>
                   <div className="space-y-4">
-                    <label className="text-[9px] font-black text-slate-400 uppercase tracking-[0.25em] ml-2">Inquiry Classification</label>
+                    <label className="text-[9px] font-black text-slate-400 uppercase tracking-[0.1em] ml-2">Inquiry Classification</label>
                     <div className="relative">
-                      <select name="inquiryType" onChange={handleChange} className="w-full h-14 px-6 rounded-xl bg-slate-50 border border-slate-100 focus:border-sky-400 focus:bg-white transition-all outline-none font-black text-[12px] uppercase tracking-[0.25em] appearance-none cursor-pointer">
+                      <select name="inquiryType" onChange={handleChange} className="w-full h-14 px-6 rounded-xl bg-slate-50 border border-slate-100 focus:border-sky-400 focus:bg-white transition-all outline-none font-black text-[12px] uppercase tracking-[0.1em] appearance-none cursor-pointer">
                         <option>Protocol Consultation</option>
                         <option>Procurement / GPO</option>
                         <option>Technical Validation</option>
@@ -171,14 +171,14 @@ export function ContactPage() {
                     </div>
                   </div>
                   <div className="md:col-span-2 space-y-4">
-                    <label className="text-[9px] font-black text-slate-400 uppercase tracking-[0.25em] ml-2">Technical Requirements / Scope</label>
+                    <label className="text-[9px] font-black text-slate-400 uppercase tracking-[0.1em] ml-2">Technical Requirements / Scope</label>
                     <textarea name="message" onChange={handleChange} rows={5} className="w-full p-6 rounded-2xl bg-slate-50 border border-slate-100 focus:border-sky-400 focus:bg-white transition-all outline-none font-medium text-base resize-none placeholder:text-slate-100" placeholder="Detail clinical environment dynamics and high-touch surface density..."></textarea>
                   </div>
                   <div className="md:col-span-2 pt-6">
-                    <Button type="submit" className="w-full h-14 py-4 rounded-xl bg-slate-950 text-white hover:bg-sky-600 text-[10px] font-black uppercase tracking-[0.25em] shadow-xl transition-all hover:scale-[1.02] active:scale-95 border-none group">
+                    <Button type="submit" className="w-full h-14 py-4 rounded-xl bg-slate-950 text-white hover:bg-sky-600 text-[10px] font-black uppercase tracking-[0.1em] shadow-xl transition-all hover:scale-[1.02] active:scale-95 border-none group">
                       Initialize Consultation <Send className="w-4 h-4 ml-4 transition-transform group-hover:translate-x-2 group-hover:-translate-y-2" />
                     </Button>
-                    <div className="mt-12 flex items-center justify-center gap-4 text-slate-400 font-bold uppercase text-[10px] tracking-[0.25em]">
+                    <div className="mt-12 flex items-center justify-center gap-4 text-slate-400 font-bold uppercase text-[10px] tracking-[0.1em]">
                       <ShieldCheck className="w-5 h-5 text-teal-500" /> SECURE BARKER-ENCRYPTED TRANSMISSION
                     </div>
                   </div>
@@ -212,9 +212,9 @@ export function ContactPage() {
                 <div className="w-24 h-24 mx-auto mb-12 bg-white/5 rounded-[2rem] flex items-center justify-center border border-white/10 backdrop-blur-xl group hover:border-sky-400 transition-all duration-500">
                   <Globe className="w-10 h-10 text-sky-400 group-hover:scale-110 transition-transform duration-500" />
                 </div>
-                <h3 className="text-[10px] font-black text-sky-400 uppercase tracking-[0.25em] mb-4">{region.title}</h3>
-                <div className="text-4xl font-black mb-6 uppercase tracking-[0.25em] leading-none">{region.city}</div>
-                <div className="text-slate-500 font-black uppercase text-[11px] tracking-[0.25em]">{region.stats}</div>
+                <h3 className="text-[10px] font-black text-sky-400 uppercase tracking-[0.1em] mb-4">{region.title}</h3>
+                <div className="text-4xl font-black mb-6 uppercase tracking-[0.1em] leading-none">{region.city}</div>
+                <div className="text-slate-500 font-black uppercase text-[11px] tracking-[0.1em]">{region.stats}</div>
               </motion.div>
             ))}
           </div>

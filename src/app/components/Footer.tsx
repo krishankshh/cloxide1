@@ -14,7 +14,7 @@ export function Footer() {
                 <img src={logo} alt="cloxide logo" className="w-full h-full object-contain" />
               </div>
               <div className="flex flex-col">
-                <span className="text-[10px] uppercase tracking-[0.25em] font-black text-cyan-600 leading-none mb-1.5 animate-pulse">
+                <span className="text-[10px] uppercase tracking-[0.1em] font-black text-cyan-600 leading-none mb-1.5 animate-pulse">
                   Precision
                 </span>
                 <span className="text-sm uppercase font-black text-slate-900 leading-none tracking-tighter">
@@ -28,11 +28,11 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="text-slate-950 font-black uppercase tracking-[0.25em] text-[10px] mb-12">Ecosystem</h3>
+            <h3 className="text-slate-950 font-black uppercase tracking-[0.1em] text-[10px] mb-12">Ecosystem</h3>
             <ul className="space-y-5">
               {["Technology", "Healthcare", "Industrial", "Research"].map((item) => (
                 <li key={item}>
-                  <Link to={`/${item.toLowerCase()}`} className="text-slate-500 hover:text-cyan-600 font-black uppercase tracking-[0.25em] transition-colors text-[11px]">
+                  <Link to={`/${item.toLowerCase()}`} className="text-slate-500 hover:text-cyan-600 font-black uppercase tracking-[0.1em] transition-colors text-[11px]">
                     {item}
                   </Link>
                 </li>
@@ -40,11 +40,11 @@ export function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="text-slate-950 font-black uppercase tracking-[0.25em] text-[10px] mb-12">Registry</h3>
+            <h3 className="text-slate-950 font-black uppercase tracking-[0.1em] text-[10px] mb-12">Registry</h3>
             <ul className="space-y-5">
               {["Products", "Compliance", "Safety", "Applications"].map((item) => (
                 <li key={item}>
-                  <Link to={`/${item.toLowerCase()}`} className="text-slate-500 hover:text-cyan-600 font-black uppercase tracking-[0.25em] transition-colors text-[11px]">
+                  <Link to={`/${item.toLowerCase()}`} className="text-slate-500 hover:text-cyan-600 font-black uppercase tracking-[0.1em] transition-colors text-[11px]">
                     {item}
                   </Link>
                 </li>
@@ -53,7 +53,7 @@ export function Footer() {
           </div>
           <div className="space-y-12">
             <div>
-              <h3 className="text-slate-950 font-black uppercase tracking-[0.25em] text-[10px] mb-12">Operational Nexus</h3>
+              <h3 className="text-slate-950 font-black uppercase tracking-[0.1em] text-[10px] mb-12">Operational Nexus</h3>
               <div className="space-y-8">
                 <div className="flex items-start gap-5 text-[13px] text-slate-500 font-medium group cursor-pointer">
                   <div className="w-9 h-9 rounded-lg bg-slate-50 flex items-center justify-center text-cyan-600 group-hover:bg-cyan-50 transition-colors shadow-sm">
@@ -73,12 +73,12 @@ export function Footer() {
         </div>
 
         <div className="mt-24 pt-12 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-10">
-          <p className="text-slate-400 text-[10px] font-black uppercase tracking-[0.25em]">
+          <p className="text-slate-400 text-[10px] font-black uppercase tracking-[0.1em]">
             © {new Date().getFullYear()} Medical Bio-Tech Systems. Globally Verified Protocol.
           </p>
           <div className="flex gap-12">
             {["Privacy Protocol", "Compliance", "Ethics"].map((item) => (
-              <Link key={item} to="#" className="text-slate-400 hover:text-slate-950 transition-colors text-[10px] font-black uppercase tracking-[0.25em]">{item}</Link>
+              <Link key={item} to="#" className="text-slate-400 hover:text-slate-950 transition-colors text-[10px] font-black uppercase tracking-[0.1em]">{item}</Link>
             ))}
           </div>
         </div>

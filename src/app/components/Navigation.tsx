@@ -69,7 +69,7 @@ export function Navigation() {
             <img src={logo} alt="ClO₂xide" className="w-full h-full object-contain" />
           </motion.div>
           <div className="flex flex-col">
-            <span className="text-[10px] font-black uppercase tracking-[0.25em] text-cyan-600 leading-none">
+            <span className="text-[10px] font-black uppercase tracking-[0.1em] text-cyan-600 leading-none">
               Precision
             </span>
             <span className="text-sm font-black text-slate-950 tracking-tight leading-none mt-1.5 uppercase">
@@ -84,7 +84,7 @@ export function Navigation() {
               key={link.name}
               to={link.path}
               className={cn(
-                "text-[10px] font-black uppercase tracking-[0.25em] transition-colors relative group",
+                "text-[10px] font-black uppercase tracking-[0.1em] transition-colors relative group",
                 isActive(link.path) ? "text-cyan-600" : "text-slate-800 hover:text-cyan-600"
               )}
             >
@@ -96,7 +96,7 @@ export function Navigation() {
             </Link>
           ))}
           <Link to="/contact">
-            <Button className="h-11 px-8 rounded-xl bg-slate-950 text-white font-black uppercase text-[10px] tracking-[0.25em] hover:bg-cyan-600 transition-all shadow-lg hover:shadow-cyan-500/20 border-none">
+            <Button className="h-11 px-8 rounded-xl bg-slate-950 text-white font-black uppercase text-[10px] tracking-[0.1em] hover:bg-cyan-600 transition-all shadow-lg hover:shadow-cyan-500/20 border-none">
               Get Started
             </Button>
           </Link>
@@ -126,7 +126,7 @@ export function Navigation() {
                   <img src={logo} alt="Logo" className="w-full h-full object-contain" />
                 </div>
                 <div className="text-left">
-                  <div className="text-[10px] font-black uppercase tracking-[0.25em] text-cyan-600">Precision</div>
+                  <div className="text-[10px] font-black uppercase tracking-[0.1em] text-cyan-600">Precision</div>
                   <div className="text-sm font-black text-slate-900 uppercase">Medical Bio-Tech</div>
                 </div>
               </div>
@@ -143,7 +143,7 @@ export function Navigation() {
                 ))}
               </div>
               <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)} className="mt-4">
-                <Button className="w-full h-16 rounded-2xl bg-slate-900 text-white font-black uppercase tracking-[0.25em] text-[12px]">
+                <Button className="w-full h-16 rounded-2xl bg-slate-900 text-white font-black uppercase tracking-[0.1em] text-[12px]">
                   Get Started
                 </Button>
               </Link>

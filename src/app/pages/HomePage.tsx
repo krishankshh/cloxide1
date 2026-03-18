@@ -77,12 +77,12 @@ export function HomePage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
           >
-            <div className="inline-flex items-center gap-4 px-6 py-2 bg-slate-950 text-white rounded-[0.5rem] mb-12 shadow-2xl border border-slate-800 tracking-[0.25em] relative group overflow-hidden">
+            <div className="inline-flex items-center gap-4 px-6 py-2 bg-slate-950 text-white rounded-[0.5rem] mb-12 shadow-2xl border border-slate-800 tracking-[0.1em] relative group overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
               <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
               <span className="mono-tag !text-white opacity-90">Protocol: V7.HUD-ACTIVE</span>
             </div>
-            <h1 className="text-7xl lg:text-titan font-black text-slate-950 leading-[0.8] tracking-[0.25em] mb-10 font-heading uppercase">
+            <h1 className="text-7xl lg:text-titan font-black text-slate-950 leading-[0.8] tracking-[0.1em] mb-10 font-heading uppercase">
               ABSOLUTE <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-teal-500 italic font-medium tracking-tight pr-10">PURITY.</span>
             </h1>
@@ -91,12 +91,12 @@ export function HomePage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/technology">
-                <Button className="h-16 px-10 rounded-2xl bg-slate-950 text-white font-black text-[11px] uppercase tracking-[0.25em] group w-full sm:w-auto hover:bg-cyan-600 transition-all shadow-xl hover:shadow-cyan-500/20 border-none">
+                <Button className="h-16 px-10 rounded-2xl bg-slate-950 text-white font-black text-[11px] uppercase tracking-[0.1em] group w-full sm:w-auto hover:bg-cyan-600 transition-all shadow-xl hover:shadow-cyan-500/20 border-none">
                   View Protocol <ArrowRight className="ml-4 w-5 h-5 group-hover:translate-x-2 transition-transform" />
                 </Button>
               </Link>
               <Link to="/products">
-                <Button variant="outline" className="h-16 px-10 rounded-2xl border-2 border-slate-100 bg-white text-slate-950 font-black text-[11px] uppercase tracking-[0.25em] w-full sm:w-auto hover:bg-slate-50 transition-all">
+                <Button variant="outline" className="h-16 px-10 rounded-2xl border-2 border-slate-100 bg-white text-slate-950 font-black text-[11px] uppercase tracking-[0.1em] w-full sm:w-auto hover:bg-slate-50 transition-all">
                   Solutions
                 </Button>
               </Link>
@@ -118,7 +118,7 @@ export function HomePage() {
 
               {/* HUD OVERLAY ELEMENTS */}
               <div className="absolute top-10 right-10 flex flex-col items-end gap-3 z-20">
-                <div className="px-3 py-1 bg-cyan-500/20 backdrop-blur-xl text-black-600 rounded border border-cyan-500/30 mono-tag text-[8px]">STATUS: MONITORING</div>
+                <div className="px-3 py-1 bg-cyan-500/20 backdrop-blur-xl !text-slate-950 rounded border border-cyan-500/30 mono-tag text-[8px]">STATUS: MONITORING</div>
               </div>
             </div>
 
@@ -134,8 +134,8 @@ export function HomePage() {
                   <Activity className="w-6 h-6 text-cyan-400" />
                 </div>
                 <div>
-                  <div className="font-black text-3xl text-slate-950 tracking-[0.25em] leading-none mb-1">99.9%</div>
-                  <div className="mono-tag text-slate-400">Purity_Index</div>
+                  <div className="font-black text-3xl text-slate-950 tracking-[0.1em] leading-none mb-1">99.9%</div>
+                   <div className="mono-tag !text-slate-950">Purity_Index</div>
                 </div>
               </div>
               <div className="w-full h-1 bg-slate-100 rounded-full overflow-hidden mb-4">
@@ -199,7 +199,7 @@ export function HomePage() {
                     <item.icon className="w-8 h-8" />
                   </div>
                   <h3 className={cn(
-                    "font-black text-slate-900 mb-6 tracking-[0.25em] uppercase",
+                    "font-black text-slate-900 mb-6 tracking-[0.1em] uppercase",
                     item.size === "lg" ? "text-4xl" : "text-xl"
                   )}>
                     {item.title}
@@ -210,7 +210,7 @@ export function HomePage() {
 
                   {item.size === "lg" && (
                     <Link to="/technology" className="w-fit">
-                      <Button variant="ghost" className="p-0 h-auto font-black text-[12px] uppercase tracking-[0.25em] text-cyan-600 hover:text-cyan-700 mt-10 flex items-center gap-3">
+                      <Button variant="ghost" className="p-0 h-auto font-black text-[12px] uppercase tracking-[0.1em] text-cyan-600 hover:text-cyan-700 mt-10 flex items-center gap-3">
                         Scientific Dossier <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-2" />
                       </Button>
                     </Link>
@@ -236,21 +236,21 @@ export function HomePage() {
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
             className="max-w-3xl mx-auto text-white"
           >
-            <div className="inline-flex items-center gap-3 px-6 py-2 bg-white/10 backdrop-blur-2xl text-cyan-400 rounded-full text-[9px] font-black mb-12 border border-white/20 uppercase tracking-[0.25em]">
+            <div className="inline-flex items-center gap-3 px-6 py-2 bg-white/10 backdrop-blur-2xl text-cyan-400 rounded-full text-[9px] font-black mb-12 border border-white/20 uppercase tracking-[0.1em]">
               Operational Performance Collective
             </div>
-            <h2 className="text-5xl lg:text-8xl font-black mb-12 leading-[0.9] tracking-[0.25em] uppercase font-heading">READY TO <br />ELEVATE?</h2>
+            <h2 className="text-5xl lg:text-8xl font-black mb-12 leading-[0.9] tracking-[0.1em] uppercase font-heading">READY TO <br />ELEVATE?</h2>
             <p className="text-xl text-slate-400 font-medium mb-16 leading-relaxed max-w-2xl mx-auto">
               Connect with our clinical engineering collective for a customized molecular safety assessment of your facility's environmental dynamics.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link to="/contact">
-                <Button className="h-16 px-10 rounded-2xl bg-white text-slate-950 font-black uppercase text-[11px] tracking-[0.25em] hover:bg-cyan-500 hover:text-white shadow-xl transition-all hover:scale-105 active:scale-95 border-none">
+                <Button className="h-16 px-10 rounded-2xl bg-white text-slate-950 font-black uppercase text-[11px] tracking-[0.1em] hover:bg-cyan-500 hover:text-white shadow-xl transition-all hover:scale-105 active:scale-95 border-none">
                   Request Site Audit
                 </Button>
               </Link>
               <Link to="/contact">
-                <Button variant="outline" className="h-16 px-10 rounded-2xl border-2 border-white/20 text-white font-black uppercase text-[11px] tracking-[0.25em] hover:bg-white/10 transition-all">
+                <Button variant="outline" className="h-16 px-10 rounded-2xl border-2 border-white/20 text-white font-black uppercase text-[11px] tracking-[0.1em] hover:bg-white/10 transition-all">
                   Contact Sales
                 </Button>
               </Link>

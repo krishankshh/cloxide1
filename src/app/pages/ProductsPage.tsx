@@ -63,11 +63,11 @@ export function ProductsPage() {
         
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="flex flex-col items-start gap-8">
-            <div className="inline-flex items-center gap-4 px-4 py-1.5 bg-slate-950 text-white rounded-[0.4rem] shadow-xl border border-slate-800 tracking-[0.25em]">
+            <div className="inline-flex items-center gap-4 px-4 py-1.5 bg-slate-950 text-white rounded-[0.4rem] shadow-xl border border-slate-800 tracking-[0.1em]">
                <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
                <span className="text-[9px] font-black uppercase">Protocol: V7.STORE-HUB</span>
             </div>
-            <h1 className="text-5xl lg:text-7xl font-black text-slate-950 tracking-[0.25em] uppercase font-heading leading-none">
+            <h1 className="text-5xl lg:text-7xl font-black text-slate-950 tracking-[0.1em] uppercase font-heading leading-none">
               MOLECULAR <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-teal-500 italic font-medium">DEPLOYMENT.</span>
             </h1>
@@ -92,7 +92,7 @@ export function ProductsPage() {
               >
                 <div className="h-48 relative overflow-hidden">
                   <img src={product.image} alt={product.title} className="w-full h-full object-cover grayscale-[0.3] group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110" />
-                  <div className="absolute top-4 left-4 medical-glass px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-[0.25em] text-slate-950">
+                  <div className="absolute top-4 left-4 medical-glass px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-[0.1em] text-slate-950">
                     ID-{product.id}
                   </div>
                 </div>
@@ -108,7 +108,7 @@ export function ProductsPage() {
                     </div>
                     <div>
                         <h3 className="text-xl font-black text-slate-900 leading-none mb-1 uppercase tracking-tight">{product.title}</h3>
-                        <p className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.25em]">{product.subtitle}</p>
+                        <p className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.1em]">{product.subtitle}</p>
                     </div>
                   </div>
                   
@@ -125,7 +125,7 @@ export function ProductsPage() {
                     ))}
                   </div>
 
-                  <Button className="w-full h-12 rounded-xl bg-slate-950 text-white text-[10px] font-black uppercase tracking-[0.25em] hover:bg-cyan-600 transition-all border-none">
+                  <Button className="w-full h-12 rounded-xl bg-slate-950 text-white text-[10px] font-black uppercase tracking-[0.1em] hover:bg-cyan-600 transition-all border-none">
                     Specifications <ArrowRight className="ml-2 w-4 h-4" />
                   </Button>
                 </div>
@@ -139,15 +139,15 @@ export function ProductsPage() {
            <div className="absolute inset-0 hud-grid opacity-[0.05] pointer-events-none" />
            <div className="max-w-7xl mx-auto px-6 relative z-10 flex flex-col lg:flex-row gap-12 items-center justify-between">
               <div className="max-w-md">
-                 <div className="text-[10px] font-black text-cyan-400 uppercase tracking-[0.25em] mb-4">Strategic Selection</div>
-                 <h2 className="text-4xl lg:text-7xl font-black mb-6 uppercase tracking-[0.25em] leading-none font-heading">TECHNICAL <br />COMPARISON</h2>
+                 <div className="text-[10px] font-black text-cyan-400 uppercase tracking-[0.1em] mb-4">Strategic Selection</div>
+                 <h2 className="text-4xl lg:text-7xl font-black mb-6 uppercase tracking-[0.1em] leading-none font-heading">TECHNICAL <br />COMPARISON</h2>
                  <p className="text-slate-400 text-lg font-medium">Detailed laboratory data and material compatibility dossiers for clinical engineering teams.</p>
               </div>
               <div className="flex flex-wrap gap-4 justify-center">
-                 <Button className="h-14 px-8 rounded-xl bg-white text-slate-950 font-black uppercase text-[10px] tracking-[0.25em] hover:bg-cyan-500 hover:text-white transition-all border-none">
+                 <Button className="h-14 px-8 rounded-xl bg-white text-slate-950 font-black uppercase text-[10px] tracking-[0.1em] hover:bg-cyan-500 hover:text-white transition-all border-none">
                     Technical Dossier
                  </Button>
-                 <Button variant="outline" className="h-14 px-8 rounded-xl border-2 border-white/20 text-white font-black uppercase text-[10px] tracking-[0.25em] hover:bg-white/10 transition-all">
+                 <Button variant="outline" className="h-14 px-8 rounded-xl border-2 border-white/20 text-white font-black uppercase text-[10px] tracking-[0.1em] hover:bg-white/10 transition-all">
                     Case Studies
                  </Button>
               </div>
@@ -163,10 +163,10 @@ export function ProductsPage() {
             <div className="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center mx-auto mb-10 shadow-sm">
                <FileText className="w-8 h-8 text-cyan-600" />
             </div>
-            <h2 className="text-3xl font-black text-slate-950 uppercase tracking-[0.25em] mb-6">READY FOR IMPLEMENTATION?</h2>
+            <h2 className="text-3xl font-black text-slate-950 uppercase tracking-[0.1em] mb-6">READY FOR IMPLEMENTATION?</h2>
             <p className="text-slate-500 font-medium mb-12 max-w-xl mx-auto italic">Our Clinical Collective provides comprehensive site audits and environment dynamics assessment.</p>
             <Link to="/contact">
-               <Button className="h-16 px-10 rounded-2xl bg-cyan-600 text-white font-black uppercase text-[11px] tracking-[0.25em] hover:bg-slate-950 transition-all shadow-xl hover:shadow-cyan-500/20 border-none">
+               <Button className="h-16 px-10 rounded-2xl bg-cyan-600 text-white font-black uppercase text-[11px] tracking-[0.1em] hover:bg-slate-950 transition-all shadow-xl hover:shadow-cyan-500/20 border-none">
                   Request site audit
                </Button>
             </Link>
